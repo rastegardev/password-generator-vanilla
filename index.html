@@ -1,57 +1,0 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="رمز عبور، تولید رمز، امنیت، پسورد، password generator">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="مهدی صفوی">
-    <meta name="subject" content="تولید رمز عبور ایمن و تصادفی">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <meta name="description"
-        content="سرویس تولید پسورد آنلاین یا پسورد ساز  برای  ایجاد رمز های عبور ایمن و غیر قابل هک  و کرک با الگوریتم پیشرفته خود و پسورد هایی ایجاد می کند که قابل استفاده در اکانت های کاربری  می باشد. این سرویس تولید رمز عبور آنلاین دارای امکانات زیادی برای تولید پسورد نظیر انتخاب تعداد و نوع کاراکتر است.">
-    <title>تولید رمز عبور تصادفی امن | پسورد ساز آنلاین برای امنیت بیشتر</title>
-</head>
-
-<body>
-    <div id="app">
-        <div class="container">
-            <h1>🔐 تولید رمز عبور آنلاین</h1>
-
-            <label for="security-level">سطح امنیت:</label>
-            <select id="security-level">
-                <option value="medium">متوسط</option>
-                <option value="strong">قوی</option>
-                <option value="advanced">پیشرفته</option>
-            </select>
-
-            <label for="length">طول رمز (1 تا 99):</label>
-            <input type="number" id="length" min="1" max="99" value="12" />
-
-            <fieldset>
-                <legend>کاراکترهای قابل استفاده:</legend>
-                <label>حروف کوچک (a-z) <input type="checkbox" class="check-box" id="lowercase" checked /></label>
-                <label>حروف بزرگ (A-Z) <input type="checkbox" class="check-box" id="uppercase" checked /></label>
-                <label>اعداد (0-9)<input type="checkbox" class="check-box" id="numbers" checked /></label>
-                <label>نمادها (!@#$%^&*) <input type="checkbox" class="check-box" id="symbols" /></label>
-                <label>کاراکترهای مبهم ({}[]()/\') <input type="checkbox" class="check-box" id="ambiguous" /></label>
-            </fieldset>
-
-            <div id="password-display" class="password-display hidden">
-                <span id="password-text"></span>
-                <button id="copy-btn">کپی</button>
-            </div>
-
-            <button id="generate">تولید رمز</button>
-            <div class="warning hidden" id="warning">⚠️ لطفاً حداقل یک گزینه را انتخاب کنید.</div>
-
-            <div class="info">طراحی و توسعه توسط <a href="https://mahdisafavi.com/" target="_blank">مهدی صفوی</a></div>
-        </div>
-    </div>
-    <script type="module" src="./assets/script/app.js"></script>
-</body>
-
-</html>
